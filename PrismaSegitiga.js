@@ -1,0 +1,12 @@
+const prompt = require("prompt-sync")({ sigint: true });
+console.log(' ================');
+console.log(' PRISMA SEGITIGA');
+console.log(' ================');
+let alas = Number(prompt('alas : '));
+let tinggi = Number(prompt('tinggi : '));
+let tinggiPrisma = Number(prompt('tinggi prisma : '));
+let volume = (alas * tinggi * tinggiPrisma) / 2;
+let luas = (alas * tinggi) + (3 * (alas * tinggiPrisma));
+console.log('Volume prisma segitiga:', volume, 'cm3');
+console.log('Luas prisma segitiga:', luas, 'cm2');
+console.log(' ====== <FINISH> ======');
